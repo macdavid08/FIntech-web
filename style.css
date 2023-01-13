@@ -1,0 +1,907 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    font-family: Rubik;
+}
+
+body {
+    width: 100%;
+    font-family: poppins ;
+}
+
+.header {
+    width: 100%;
+}
+
+.logo h1 {
+    font-size: 36px;
+    font-family: rubik;
+}
+
+.nav{
+    background-color: rgb(126, 194, 8);
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.link li {
+    padding: 0 20px;
+    list-style-type: none;
+    font-size: 16px;
+}
+
+.link li a {
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+.link li a:hover {
+    color: rgb(145, 24, 34);
+    
+}
+
+.link li a.active{
+    background-color: transparent;
+    color: black;
+    border: none;
+}
+
+.link li a.active:hover{
+    color: white;
+    border: none;
+}
+
+
+
+
+
+.toggle {
+    display: none;
+}
+
+.close {
+    display: none   ;
+}
+
+.hero-cont {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.9)), url('image/hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hero{
+    position: absolute;
+    width: 80%;
+    top: 100px;
+    padding: 0 70px;
+}
+
+.hero h2 {
+    color: white;
+    font-size: 54px;
+}
+
+.hero p {
+    color: white;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.hero form {
+    margin: 40px 0;
+}
+
+.hero form input{
+    font-size: 18px;
+    margin: 10px 0;
+    display: block;
+}
+
+.hero form input[type=text],.hero form input[type=email]{
+    width: 50%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+}
+
+.hero form input[type=text]:focus,.hero form input[type=email]:focus {
+    outline: none;
+}
+
+.hero form input::placeholder{
+    font-size: 14px;
+    color: gainsboro;
+    border: none;
+}
+
+.hero form input[type=submit] {
+    width: 50%;
+    margin: 12px 0;
+    padding: 8px 20px;
+    background-color: rgb(126, 194, 8);
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.hero form input[type=submit]:hover{
+    color: white;
+    background-color: rgba(4, 119, 25, 0.9);
+}
+
+.feature-container{
+    width: 100%;
+    margin-top: 50px;
+}
+
+.feature {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.feature-cols {
+    width: 300px;
+    margin: 0 20px;
+}
+
+.feature-cols img {
+    width: 250px;
+}
+
+.feature-cols h2 {
+    margin-bottom: 20px;
+}
+
+
+.feature-cols p {
+    margin-bottom: 15px;
+}
+
+.feature-cols a.btn{
+    padding: 8px 10px;
+    background-color: rgb(126, 194, 8);
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.feature-cols a.btn:hover{
+    padding: 10px 15px;
+}
+
+.about-cont {
+    width: 100%;
+    margin-top: 40px;
+    background-color: rgb(49, 46, 46);
+}
+
+.about{
+    padding: 50px 70px;
+    color: white;
+    display: flex;
+}
+
+.about-content{
+    width: 50%;
+    padding: 10px 0;
+}
+
+
+.about-content h4{
+    font-size: 18px;
+    font-weight: 300;
+}
+.about-content h2{
+    font-family: rubik;
+    padding: 10px 0;
+    font-size: 36px;
+    color: rgb(126, 194, 8) ;
+}
+
+.about-content p{
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.about-grid {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(2,150px);
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+.about-grid .ios, .android, .database, .data {
+    padding: 5px 10px;
+    background-color: white;
+    color: black;
+}
+
+.icon{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(126, 194, 8);
+    margin-top: 10px;
+    
+    
+}
+
+.txt{
+    width: 150px;
+    margin: 20px auto;
+    font-size: 18px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.process-container {
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+.process {
+    padding: 60px 40px;
+}
+
+.process h2{
+    text-align: center;
+    font-family: rubik;
+    font-size: 36px;
+    padding: 30px 0;
+}
+
+.style {
+    width: 80%;
+    margin: 0 auto;
+    height: 7px;
+    background-color: black;
+    position: relative;
+}
+
+.style .circle1,
+.style .circle2,
+.style .circle3 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: black;
+}
+
+.style .circle1 {
+    top: -7px;
+    left: 30px;
+}
+
+.style .circle2 {
+    top: -7px;
+    left: 50%;
+}
+
+.style .circle3 {
+    top: -7px;
+    right: 40px;
+}
+
+.numb-flx{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.numb-flx h2{
+    text-align:left;
+    font-family: rubik;
+    font-size: 24px;
+    margin-top: 20px;
+    color: rgb(126, 194, 8);
+}
+
+.numb-flx2 h2{
+    text-align: center;
+}
+
+.numb-flx3 h2{
+    text-align: right;
+}
+
+.numb-flx1, 
+.numb-flx2, 
+.numb-flx3 {
+    margin: 0 10px;
+}
+
+.numb-flx2{
+    text-align: center;
+}
+
+.numb-flx3{
+    text-align: right;
+}
+
+.testimonial-cont {
+    width: 100%;
+    background-color: white;
+}
+.testimonial-flx{
+    width: 75%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testimonial {
+    width: 49%;
+    background-color: black;
+    padding: 20px 0;
+}
+
+.testimonial img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.tst-text {
+    color: white;
+    padding: 0 50px;
+    margin-top: 20px;
+}
+
+.tst-text p {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+
+.tst-text h2{
+    font-family: rubik;
+    font-size: 24px;
+    color: rgb(126, 194, 8);
+}
+
+.rating {
+    display:flex;
+    padding: 0 50px;
+    padding: 15px 50px;
+}
+
+.star {
+    color: white;
+    font-size: 20px;
+    margin-right: 3px;
+}
+
+.contact-container {
+    width: 100%;
+    background-color: rgb(194, 188, 188);
+}
+
+.contact {
+    padding: 30px 0;
+    width: 50%;
+    margin: 20px auto;
+}
+
+.contact h2 {
+    font-family: rubik;
+    font-size: 28px;
+    color: black;
+    text-align: left;
+}
+
+.contact form {
+    margin: 20px 0;
+}
+
+.contact form input{
+    font-size: 16px;
+    margin: 15px 0;
+    display: block;
+}
+
+.contact form input[type=text],.contact form input[type=email]{
+    width: 80%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+}
+
+.contact form input[type=text]:focus,.contact form input[type=email]:focus{
+    border: none;
+    outline: none;
+}
+
+.contact form input::placeholder{
+    font-size: 14px;
+    color: rgb(126, 194, 8);
+}
+
+.contact textarea{
+    width: 80%;
+    height: 20vh;
+    resize: none;
+    box-sizing: border-box;
+    border: none;
+    padding: 20px 20px;
+}
+
+.contact textarea:focus {
+    outline: none;
+}
+
+.contact form input[type=submit] {
+    width: 80%;
+    margin: 5px 0;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    background-color: black;
+    font-size: 18px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.contact form input[type=submit]:hover{
+    background-color: rgb(126, 194, 8);
+    color: white;
+}
+
+.footer {
+    width: 100%;
+    background-color: black;
+    margin-top: -20px;
+}
+
+.footer p {
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 12px;
+}
+
+
+@media only screen and (min-width: 200px) and  (max-width:680px) {
+
+    .header {
+        position: relative;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 0px;
+        right: 0;
+        width: 200px;
+        height: 80vh;
+        background-color: rgba(0, 0, 0, 0.9);
+        transition: 10s ease-in-out;
+        z-index: 999;
+    }
+
+    .toggle {
+        display: block;
+    }
+
+    .toggle i {
+        font-size: 25px;
+    }
+    .close {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        display: block;
+        padding: 10px 0;
+    }
+
+    .close i {
+        color: white;
+        font-size: 25px;
+    }
+
+    .link {
+        display: block;
+        margin-top: 60px;
+    }
+
+    .link li {
+        margin-top: 30px;
+    }
+
+    .link li a.active{
+        color: rgb(101, 234, 67);
+        border: none;
+    }
+
+    .logo h1 {
+        font-size: 26px;
+    }
+
+    .hero-cont {
+        height: 70vh;
+    }
+
+    .hero {
+        width: 100%;
+        padding: 0 20px;
+        top: 50px;
+    }
+
+
+    .hero h2 {
+        color: white;
+        font-size: 30px;
+        text-align: left;
+    }
+    
+    .hero p {
+        color: white;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    
+    .hero form {
+        margin-top: 20px;
+    }
+    
+    .hero form input{
+        font-size: 18px;
+        margin: 10px 0;
+        display: block;
+    }
+    
+    .hero form input[type=text],.hero form input[type=email]{
+        width: 90%;
+        padding: 5px 20px;
+    }
+    
+    .hero form input[type=text]:focus,.hero form input[type=email]:focus {
+        outline: none;
+    }
+    
+    .hero form input::placeholder{
+        font-size: 14px;
+    }
+    
+    .hero form input[type=submit] {
+        width: 80%;
+        margin: 12px 0;
+        padding: 7px 20px;
+      
+    }
+
+    .feature-container {
+        margin-top: 20px;
+    }
+
+
+    .feature {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .feature-cols {
+        padding: 20px 0;
+    }
+
+    .feature-cols h2 {
+        margin-bottom: 5px;
+    }
+
+    .about-cont {
+        margin-top: 20px;
+    }
+    
+    .about{
+        padding: 20px 30px;
+        color: white;
+        display: block;
+    }
+    
+    .about-content{
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+
+    .about-content h4{
+        font-size: 16px;
+    }
+
+    .about-content h2{
+        padding: 7px 0;
+        font-size: 30px;
+    }
+    
+    .about-content p{
+        font-size: 12px;
+        margin: 10px 0;
+    }
+    
+    .about-grid {
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px 0;
+        grid-template-columns: repeat(1, 275px);
+        grid-template-rows: repeat(4,175px);
+        grid-gap: 15px;
+    }
+
+    .icon{
+        font-size: 35px;
+    }
+
+    .process {
+        padding: 20px 15px;
+    }
+    
+    .process h2{
+        font-size: 30px;
+        padding: 10px 0;
+    }
+    
+    .style {
+        display: none;
+    }
+
+
+    .numb-flx{
+        display: block;
+    }
+    
+    .numb-flx h2{
+        text-align:center;
+        margin-top: 10px;
+    }
+
+
+    .numb-flx1,
+    .numb-flx2,
+    .numb-flx3{
+        text-align:center;
+    }
+
+    .testimonial-flx{
+        width: 90%;
+        margin: 30px auto;
+        display: block;
+    }
+    
+    .testimonial {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .contact {
+        padding: 20px 0;
+        width: 90%;
+        margin: 20px auto;
+    }
+    
+    .contact form input[type=text],.contact form input[type=email],.contact textarea,.contact form input[type=submit]{
+        width: 100%;
+    }
+}
+
+
+@media only screen and (min-width: 700px) and  (max-width:992px) {
+
+    .nav{
+        padding: 20px 10px;
+    }
+    
+    
+    .link li {
+        padding: 0 15px;
+        font-size: 18px;
+    }
+
+    .hero-cont {
+        height: 90vh;
+    }
+
+
+    .hero{
+        position: absolute;
+        width: 90%;
+        top: 70px;
+        padding: 0 40px;
+    }
+    
+    .hero h2 {
+        font-size: 48px;
+        line-height: 55px;
+    }
+    
+    
+    .hero form input[type=text],.hero form input[type=email]{
+        width: 80%;
+    }
+    
+    
+    .hero form input[type=submit] {
+        width: 80%;
+    }
+
+    .hero form input[type=submit]:hover {
+        width: 80%;
+        color: white;
+        background-color: rgba(4, 119, 25, 0.9);
+    }
+
+
+    .feature-container{
+        width: 100%;
+        margin-top: 30px;
+    }
+    
+    .feature {
+        width: 100%;
+        padding: 10px 10px;
+    }
+    
+    .feature-cols {
+        width: 30%;
+        padding: 10px 0;
+        margin: 0 10px;
+    }
+    
+    .feature-cols img {
+        width: 200px;
+    }
+    
+    .feature-cols h2 {
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .feature-cols p {
+        font-size: 14px;
+    }
+    
+    
+    .feature-cols p {
+        margin-top: -5px;
+        margin-bottom: 10px;
+    }
+    
+    .about-cont {
+        width: 100%;
+        margin-top: 20px;
+        background-color: rgb(49, 46, 46);
+    }
+    
+    .about{
+        padding: 30px 20px;
+        color: white;
+        display: flex;
+    }
+    
+    .about-content{
+        width: 50%;
+        padding: 10px 0;
+    }
+    
+    
+    .about-content p{
+        font-size: 14px;
+        margin: 10px 0;
+    }
+    
+    .about-grid {
+        width: 50%;
+        display: grid;
+        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: repeat(2,200px);
+        grid-gap: 10px;
+        justify-content: center;
+    }
+    
+    .about-grid .ios, .android, .database, .data {
+        padding: 5px 0px;
+        background-color: white;
+        color: black;
+    }
+    
+    .icon{
+        margin-top: 30px;
+        
+        
+    }
+    
+    .txt{
+        margin: 0 auto;
+        margin-top: 40px;
+        
+    }
+
+
+    
+    .process {
+        padding: 20px 20px;
+    }
+    
+    .process h2{
+        padding: 20px 0;
+    }
+    
+    .style {
+        width: 90%;
+    }
+    
+    
+    .numb-flx{
+        width: 90%;
+    }
+
+
+    .testimonial-flx{
+        width: 90%;
+        margin: 30px auto;
+    }
+    
+    .testimonial {
+        width: 49%;
+        padding: 20px 0;
+    }
+
+
+    .contact {
+        padding: 30px 0;
+        width: 80%;
+        margin: 20px auto;
+    }
+    
+    
+    
+    .contact form input[type=text],.contact form input[type=email],  .contact textarea, .contact form input[type=submit]{
+        width: 90%;
+    }
+    
+    .contact form input[type=submit]:hover{
+        background-color: rgb(126, 194, 8);
+        color: white;
+    }
+    
+
+}
+
+
